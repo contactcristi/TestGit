@@ -45,6 +45,12 @@
 					"scope": "public",
 					"unique": true,
 					"type": "string"
+				},
+				{
+					"name": "Imagine",
+					"scope": "public",
+					"type": "image",
+					"kind": "storage"
 				}
 			]
 		}

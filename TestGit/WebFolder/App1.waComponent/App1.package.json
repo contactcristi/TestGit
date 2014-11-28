@@ -1,0 +1,1 @@
+﻿{"name":"TestGit/App1.waComponent","version":"1.0.0","webComponent":"App1.waComponent/App1.js","loadDependencies":[{"id":"Widget/autoForm","type":"widget"},{"id":"App1.waComponent/App1.html","path":"WEBFOLDER","type":"html"},{"id":"App1.waComponent/App1.css","path":"WEBFOLDER","type":"style"},{"id":"App1.waComponent/App1.js","path":"WEBFOLDER","type":"script"}]}
