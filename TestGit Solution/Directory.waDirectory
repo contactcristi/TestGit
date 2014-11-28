@@ -1,6 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<directory>
+﻿<?xml version="1.0" encoding="UTF-8"?><directory>
 	<group ID="01000000000000000000000000000000" name="Admin">
+		<include user="cristi" ID="E7A88A0BDFA79A4284710372C8593AE9"/>
+		<include user="cristi" ID="E7A88A0BDFA79A4284710372C8593AE9"/>
+		<include user="cristi" ID="E7A88A0BDFA79A4284710372C8593AE9"/>
 	</group>
+	<group ID="9CF4D463B552CC43BE517790040E628D" name="Users">
+		<include user="cristi" userID="E7A88A0BDFA79A4284710372C8593AE9"/>
+		<include user="cristi" ID="E7A88A0BDFA79A4284710372C8593AE9"/>
+		<include user="cristi" ID="E7A88A0BDFA79A4284710372C8593AE9"/>
+		<include user="Guest" ID="800F06E9E0186940BB11F48A68A4879C"/>
+	</group>
+	<user ID="E7A88A0BDFA79A4284710372C8593AE9" name="cristi" fullName="Cristi Matei" password="a7085f92d84d8776756baea381e7500e"/>
+	<user ID="800F06E9E0186940BB11F48A68A4879C" name="Guest" fullName="" password="7ed306e9a7f28f528c5298d4b97a355b"/>
 </directory>
-
