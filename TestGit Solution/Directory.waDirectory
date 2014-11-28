@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?><directory>
 	<group ID="01000000000000000000000000000000" name="Admin">
 		<include user="cristi" ID="E7A88A0BDFA79A4284710372C8593AE9"/>
-		<include user="cristi" ID="E7A88A0BDFA79A4284710372C8593AE9"/>
-		<include user="cristi" ID="E7A88A0BDFA79A4284710372C8593AE9"/>
 	</group>
 	<group ID="9CF4D463B552CC43BE517790040E628D" name="Users">
 		<include user="cristi" userID="E7A88A0BDFA79A4284710372C8593AE9"/>
