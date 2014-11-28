@@ -1,1 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><permissions></permissions>
+﻿<?xml version="1.0" encoding="UTF-8"?><permissions>
+	<allow action="read" groupName="Users" groupID="9CF4D463B552CC43BE517790040E628D" resource="Model.Scoala" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="create" groupName="Users" groupID="9CF4D463B552CC43BE517790040E628D" resource="Model.Scoala" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="update" groupName="Users" groupID="9CF4D463B552CC43BE517790040E628D" resource="Model.Scoala" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="remove" groupName="Users" groupID="9CF4D463B552CC43BE517790040E628D" resource="Model.Scoala" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="describe" groupName="Users" groupID="9CF4D463B552CC43BE517790040E628D" resource="Model.Scoala" temporaryForcePermissions="false" type="dataClass"/>
+</permissions>
