@@ -42,7 +42,6 @@
 					"name" : "ID",
 					"kind" : "storage",
 					"scope" : "public",
-					"indexed" : true,
 					"unique" : true,
 					"autosequence" : true,
 					"type" : "long",
@@ -53,7 +52,8 @@
 					"kind" : "storage",
 					"scope" : "public",
 					"unique" : true,
-					"type" : "string"
+					"type" : "string",
+					"indexKind" : "btree"
 				}
 			],
 			"key" : 
