@@ -1,50 +1,67 @@
-﻿{
-	"toJSON": true,
-	"extraProperties": {
-		"version": "2",
-		"classes": {
-			"Scoala": {
-				"panelColor": "#E5B9B7",
-				"panel": {
-					"isOpen": "true",
-					"position": {
-						"X": 25,
-						"Y": 20
-					},
-					"pathVisible": true
+
+{
+	"toJSON" : true,
+	"extraProperties" : 
+	{
+		"version" : "2",
+		"classes" : 
+		{
+			"Scoala" : 
+			{
+				"panelColor" : "#E5B9B7",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 25,
+						"Y" : 20
+					}
 				}
 			}
 		},
-		"model": {
-			"scriptMode": "manual",
-			"workspaceLeft": 0,
-			"workspaceTop": 0
+		"model" : 
+		{
+			"scriptMode" : "manual",
+			"workspaceLeft" : 0,
+			"workspaceTop" : 0
 		}
 	},
-	"dataClasses": [
+	"dataClasses" : 
+	[
 		{
-			"collectionName": "ScoalaCollection",
-			"className": "Scoala",
-			"attributes": [
+			"name" : "Scoala",
+			"className" : "Scoala",
+			"collectionName" : "ScoalaCollection",
+			"scope" : "public",
+			"publishAsJSGlobal" : true,
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "storage",
-					"type": "long",
-					"autosequence": "true",
-					"unique": "true",
-					"primKey": "true",
-					"identifying": false
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "Denumire",
-					"scope": "public",
-					"type": "string",
-					"kind": "storage",
-					"unique": "true"
+					"name" : "Denumire",
+					"kind" : "storage",
+					"scope" : "public",
+					"unique" : true,
+					"type" : "string"
 				}
 			],
-			"publishAsJSGlobal": true
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
 		}
-	],
-	"type": []
+	]
 }
