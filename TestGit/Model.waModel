@@ -3,7 +3,7 @@
 	"extraProperties": {
 		"version": "2",
 		"classes": {
-			"Scoala": {
+			"Clasa": {
 				"panelColor": "#E5B9B7",
 				"panel": {
 					"isOpen": "true",
@@ -12,6 +12,17 @@
 						"X": 25,
 						"Y": 20
 					}
+				}
+			},
+			"Clasa1": {
+				"panelColor": "#eee",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 265,
+						"Y": 20
+					},
+					"pathVisible": true
 				}
 			}
 		},
@@ -24,8 +35,8 @@
 	"dataClasses": [
 		{
 			"name": "Scoala",
-			"className": "Scoala",
-			"collectionName": "ScoalaCollection",
+			"className": "Clasa",
+			"collectionName": "ClasaCollection",
 			"scope": "public",
 			"publishAsJSGlobal": true,
 			"attributes": [
@@ -33,26 +44,52 @@
 					"name": "ID",
 					"kind": "storage",
 					"scope": "public",
-					"unique": true,
+					"unique": "true",
 					"autosequence": true,
 					"type": "long",
 					"indexKind": "btree",
-					"primKey": true
+					"primKey": "true"
 				},
 				{
-					"name": "Denumire",
+					"name": "Nume",
 					"kind": "storage",
 					"scope": "public",
 					"unique": true,
-					"type": "string"
+					"type": "string",
+					"matchColumn": "Denumire"
+				},
+				{
+					"name": "DataNasterii",
+					"scope": "public",
+					"type": "date",
+					"kind": "storage"
+				},
+				{
+					"name": "TelParinte",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage",
+					"unique": "true"
+				},
+				{
+					"name": "EmailParinte",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage"
 				},
 				{
 					"name": "Imagine",
+					"kind": "storage",
 					"scope": "public",
-					"type": "image",
-					"kind": "storage"
+					"type": "image"
 				}
-			]
+			],
+			"matchTable": "Scoala"
+		},
+		{
+			"collectionName": "Clasa1Collection",
+			"className": "Clasa1",
+			"extends": "Clasa"
 		}
 	],
 	"type": []

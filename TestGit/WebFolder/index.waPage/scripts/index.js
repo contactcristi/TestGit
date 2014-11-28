@@ -2,19 +2,15 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
-	var documentEvent = {};	// @document
 	var login1 = {};	// @login
+	var documentEvent = {};	// @document
 // @endregion// @endlock
 
 // eventHandlers// @lock
 
-	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
+	login1.login = function login1_login (event)// @startlock
 	{// @endlock
-		if (WAF.directory.currentUser() == null) {
-			$$('main').loadComponent ('Public.waComponent');
-		} else {
-			$$('main').loadComponent ('App1.waComponent');
-		}
+			window.location = 'index.html';
 	};// @lock
 
 	login1.logout = function login1_logout (event)// @startlock
@@ -22,14 +18,18 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		window.location = 'index.html';
 	};// @lock
 
-	login1.login = function login1_login (event)// @startlock
+	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
 	{// @endlock
-			window.location = 'index.html';
+		if(WAF.directory.currentUser() == null) {
+			$$("main").loadComponent("/public.waComponent");
+		} else {
+			$$("main").loadComponent("/app1.waComponent");
+		}
 	};// @lock
 
 // @region eventManager// @startlock
-	WAF.addListener("document", "onLoad", documentEvent.onLoad, "WAF");
-	WAF.addListener("login1", "logout", login1.logout, "WAF");
 	WAF.addListener("login1", "login", login1.login, "WAF");
+	WAF.addListener("login1", "logout", login1.logout, "WAF");
+	WAF.addListener("document", "onLoad", documentEvent.onLoad, "WAF");
 // @endregion
 };// @endlock

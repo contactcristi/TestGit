@@ -3,21 +3,17 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id} {
-	 background-image: url('/images/55_bg_basketball.jpg');
-	 background-repeat: no-repeat;
-	 
-}
-
 #{id}richText1 {
-	 z-index: 1;
-	 width: 431px;
-	 height: 40px;
-	 top: 78px;
-	 left: 72px;
+	 z-index: 3;
+	 width: 227px;
+	 height: 34px;
+	 top: 89px;
+	 left: 273px;
 	
 	 position: absolute;
-	 font-size: 36px;
+	 font-size: 31px;
+	 text-align: center;
+	 text-shadow: rgb(127, 127, 127) 2px 1px 0px;
 	 
 }
 
