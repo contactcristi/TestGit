@@ -3,6 +3,50 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}queryForm1 {
+	 z-index: 11;
+	 width: 471px;
+	 height: 368px;
+	 top: 66px;
+	 left: 20px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button5 {
+	 z-index: 10;
+	 width: 100px;
+	 height: 24px;
+	 top: 25px;
+	 left: 21px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}dataGrid5 {
+	 z-index: 1;
+	 width: 709px;
+	 height: 407px;
+	 top: 21px;
+	 left: 20px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}dataGrid1 {
+	 z-index: 3;
+	 width: 217px;
+	 height: 276px;
+	 top: 22px;
+	 left: 513px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}container1 {
 	 z-index: 5;
 	 width: 260px;
@@ -19,7 +63,7 @@
 	 width: 20px;
 	 height: 22px;
 	 top: 3px;
-	 right: 80px;
+	 right: -484px;
 	
 	 position: absolute;
 	 
@@ -30,7 +74,7 @@
 	 width: 20px;
 	 height: 22px;
 	 top: 3px;
-	 right: 57px;
+	 right: -507px;
 	
 	 position: absolute;
 	 
@@ -41,7 +85,7 @@
 	 width: 25px;
 	 height: 22px;
 	 top: 3px;
-	 right: 29px;
+	 right: -535px;
 	
 	 position: absolute;
 	 
@@ -52,7 +96,7 @@
 	 width: 23px;
 	 height: 22px;
 	 top: 3px;
-	 right: 3px;
+	 right: -561px;
 	
 	 position: absolute;
 	 
@@ -60,10 +104,10 @@
 
 #{id}label3 {
 	 z-index: 31;
-	 width: 29px;
+	 width: 49px;
 	 height: 13px;
-	 top: 366px;
-	 left: 307px;
+	 top: 356px;
+	 left: 334px;
 	
 	 position: absolute;
 	 
@@ -73,8 +117,8 @@
 	 z-index: 31;
 	 width: 260px;
 	 height: 35px;
-	 top: 355px;
-	 left: 341px;
+	 top: 374px;
+	 left: 334px;
 	
 	 position: absolute;
 	 
@@ -101,12 +145,13 @@
 
 #{id}label2 {
 	 z-index: 28;
-	 width: 69px;
+	 width: 80px;
 	 height: 13px;
 	 top: 310px;
-	 left: 343px;
+	 left: 332px;
 	
 	 position: absolute;
+	 min-width: 80px;
 	 
 }
 
@@ -123,12 +168,13 @@
 
 #{id}label1 {
 	 z-index: 26;
-	 width: 72px;
+	 width: 80px;
 	 height: 13px;
 	 top: 261px;
-	 left: 339px;
+	 left: 331px;
 	
 	 position: absolute;
+	 min-width: 80px;
 	 
 }
 
@@ -162,6 +208,7 @@
 	 left: 329px;
 	
 	 position: absolute;
+	 min-width: 80px;
 	 
 }
 
@@ -189,10 +236,10 @@
 
 #{id}container4 {
 	 z-index: 6;
+	 width: 751px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -222,10 +269,10 @@
 
 #{id}container3 {
 	 z-index: 5;
+	 width: 751px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -255,7 +302,7 @@
 
 #{id}container2 {
 	 z-index: 4;
-	 width: 758px;
+	 width: 751px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
@@ -298,10 +345,10 @@
 
 #{id}menuBar1 {
 	 z-index: 3;
+	 width: 208px;
 	 height: 23px;
 	 top: 5px;
 	 left: 5px;
-	 right: 555px;
 	
 	 position: absolute;
 	 
@@ -309,10 +356,10 @@
 
 #{id}tabView1 {
 	 z-index: 7;
-	 width: 768px;
+	 width: 761px;
 	 height: 487px;
 	 top: 10px;
-	 left: 9px;
+	 left: 8px;
 	
 	 position: absolute;
 	 

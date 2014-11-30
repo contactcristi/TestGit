@@ -18,11 +18,38 @@
 				"panelColor": "#eee",
 				"panel": {
 					"isOpen": "true",
+					"pathVisible": true,
 					"position": {
 						"X": 265,
 						"Y": 20
-					},
+					}
+				}
+			},
+			"Note": {
+				"panel": {
 					"pathVisible": true
+				}
+			},
+			"Comunicari": {
+				"panelColor": "#D7E3BC",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 512,
+						"Y": 29
+					}
+				}
+			},
+			"Materii": {
+				"panelColor": "#BFBFBF",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 25,
+						"Y": 270
+					}
 				}
 			}
 		},
@@ -34,9 +61,10 @@
 	},
 	"dataClasses": [
 		{
-			"name": "Scoala",
+			"name": "Clasa",
 			"className": "Clasa",
 			"collectionName": "ClasaCollection",
+			"matchTable": "Scoala",
 			"scope": "public",
 			"publishAsJSGlobal": true,
 			"attributes": [
@@ -44,38 +72,39 @@
 					"name": "ID",
 					"kind": "storage",
 					"scope": "public",
-					"unique": "true",
+					"unique": true,
 					"autosequence": true,
 					"type": "long",
 					"indexKind": "btree",
-					"primKey": "true"
+					"primKey": true
 				},
 				{
 					"name": "Nume",
 					"kind": "storage",
+					"matchColumn": "Denumire",
 					"scope": "public",
 					"unique": true,
-					"type": "string",
-					"matchColumn": "Denumire"
+					"type": "string"
 				},
 				{
 					"name": "DataNasterii",
+					"kind": "storage",
 					"scope": "public",
 					"type": "date",
-					"kind": "storage"
+					"simpleDate": false
 				},
 				{
 					"name": "TelParinte",
-					"scope": "public",
-					"type": "string",
 					"kind": "storage",
-					"unique": "true"
+					"scope": "public",
+					"unique": true,
+					"type": "string"
 				},
 				{
 					"name": "EmailParinte",
+					"kind": "storage",
 					"scope": "public",
-					"type": "string",
-					"kind": "storage"
+					"type": "string"
 				},
 				{
 					"name": "Imagine",
@@ -83,14 +112,118 @@
 					"scope": "public",
 					"type": "image"
 				}
-			],
-			"matchTable": "Scoala"
+			]
 		},
 		{
-			"collectionName": "Clasa1Collection",
+			"name": "Clasa1",
 			"className": "Clasa1",
+			"collectionName": "Clasa1Collection",
+			"scope": "public",
+			"publishAsJSGlobal": true,
 			"extends": "Clasa"
+		},
+		{
+			"name": "Comunicari",
+			"className": "Comunicari",
+			"collectionName": "ComunicariCollection",
+			"scope": "public",
+			"publishAsJSGlobal": true,
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "Data",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false
+				},
+				{
+					"name": "Nota",
+					"kind": "storage",
+					"scope": "public",
+					"type": "number"
+				},
+				{
+					"name": "Materia",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "Continut",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "Elevi",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				}
+			]
+		},
+		{
+			"name": "Materii",
+			"className": "Materii",
+			"collectionName": "MateriiCollection",
+			"scope": "public",
+			"publishAsJSGlobal": true,
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "DenumireMaterie",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				}
+			]
+		},
+		{
+			"name": "Note",
+			"className": "Note",
+			"collectionName": "NoteCollection",
+			"scope": "public",
+			"publishAsJSGlobal": true,
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long"
+				},
+				{
+					"name": "Nota",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"not_null": true,
+					"type": "number"
+				}
+			],
+			"key": [
+				{
+					"name": "ID"
+				}
+			]
 		}
-	],
-	"type": []
+	]
 }
