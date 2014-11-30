@@ -1,236 +1,80 @@
-
-{
-	"toJSON" : true,
-	"extraProperties" : 
-	{
-		"version" : "2",
-		"classes" : 
-		{
-			"Clasa" : 
-			{
-				"panelColor" : "#E5B9B7",
-				"panel" : 
-				{
-					"isOpen" : "true",
-					"pathVisible" : true,
-					"position" : 
-					{
-						"X" : 25,
-						"Y" : 20
-					}
-				}
-			},
-			"Clasa1" : 
-			{
-				"panelColor" : "#eee",
-				"panel" : 
-				{
-					"isOpen" : "true",
-					"pathVisible" : true,
-					"position" : 
-					{
-						"X" : 265,
-						"Y" : 20
-					}
-				}
-			},
-			"Comunicari" : 
-			{
-				"panelColor" : "#D7E3BC",
-				"panel" : 
-				{
-					"isOpen" : "true",
-					"pathVisible" : true,
-					"position" : 
-					{
-						"X" : 309,
-						"Y" : 297
-					}
-				}
-			},
-			"Materii" : 
-			{
-				"panelColor" : "#BFBFBF",
-				"panel" : 
-				{
-					"isOpen" : "true",
-					"pathVisible" : true,
-					"position" : 
-					{
-						"X" : 25,
-						"Y" : 270
+﻿{
+	"toJSON": true,
+	"extraProperties": {
+		"version": "2",
+		"classes": {
+			"Clasa": {
+				"panelColor": "#E5B9B7",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 25,
+						"Y": 20
 					}
 				}
 			}
 		},
-		"model" : 
-		{
-			"scriptMode" : "manual",
-			"workspaceLeft" : 0,
-			"workspaceTop" : 0
+		"model": {
+			"scriptMode": "manual",
+			"workspaceLeft": 0,
+			"workspaceTop": 0
 		}
 	},
-	"dataClasses" : 
-	[
+	"dataClasses": [
 		{
-			"name" : "Clasa",
-			"className" : "Clasa",
-			"collectionName" : "ClasaCollection",
-			"matchTable" : "Scoala",
-			"scope" : "public",
-			"publishAsJSGlobal" : true,
-			"attributes" : 
-			[
+			"name": "Clasa",
+			"className": "Clasa",
+			"collectionName": "ClasaCollection",
+			"matchTable": "Scoala",
+			"scope": "public",
+			"publishAsJSGlobal": true,
+			"attributes": [
 				{
-					"name" : "ID",
-					"kind" : "storage",
-					"scope" : "public",
-					"indexed" : true,
-					"unique" : true,
-					"autosequence" : true,
-					"type" : "long",
-					"indexKind" : "btree"
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"indexKind": "btree",
+					"primKey": true
 				},
 				{
-					"name" : "Nume",
-					"kind" : "storage",
-					"matchColumn" : "Denumire",
-					"scope" : "public",
-					"indexed" : true,
-					"unique" : true,
-					"type" : "string",
-					"indexKind" : "btree"
+					"name": "Nume",
+					"kind": "storage",
+					"matchColumn": "Denumire",
+					"scope": "public",
+					"unique": true,
+					"type": "string",
+					"indexKind": "btree"
 				},
 				{
-					"name" : "DataNasterii",
-					"kind" : "storage",
-					"scope" : "public",
-					"type" : "date",
-					"simpleDate" : false
+					"name": "DataNasterii",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false
 				},
 				{
-					"name" : "TelParinte",
-					"kind" : "storage",
-					"scope" : "public",
-					"indexed" : true,
-					"unique" : true,
-					"type" : "string",
-					"indexKind" : "btree"
+					"name": "TelParinte",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"type": "string",
+					"indexKind": "btree"
 				},
 				{
-					"name" : "EmailParinte",
-					"kind" : "storage",
-					"scope" : "public",
-					"type" : "string"
+					"name": "EmailParinte",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
 				},
 				{
-					"name" : "Imagine",
-					"kind" : "storage",
-					"scope" : "public",
-					"type" : "image"
-				}
-			],
-			"key" : 
-			[
-				{
-					"name" : "ID"
-				}
-			]
-		},
-		{
-			"name" : "Clasa1",
-			"className" : "Clasa1",
-			"collectionName" : "Clasa1Collection",
-			"scope" : "public",
-			"publishAsJSGlobal" : true,
-			"extends" : "Clasa"
-		},
-		{
-			"name" : "Comunicari",
-			"className" : "Comunicari",
-			"collectionName" : "ComunicariCollection",
-			"scope" : "public",
-			"publishAsJSGlobal" : true,
-			"attributes" : 
-			[
-				{
-					"name" : "ID",
-					"kind" : "storage",
-					"scope" : "public",
-					"indexed" : true,
-					"unique" : true,
-					"autosequence" : true,
-					"type" : "long",
-					"indexKind" : "btree"
-				},
-				{
-					"name" : "Data",
-					"kind" : "storage",
-					"scope" : "public",
-					"type" : "date",
-					"simpleDate" : false
-				},
-				{
-					"name" : "Nota",
-					"kind" : "storage",
-					"scope" : "public",
-					"type" : "number"
-				},
-				{
-					"name" : "Materia",
-					"kind" : "storage",
-					"scope" : "public",
-					"type" : "string"
-				},
-				{
-					"name" : "Continut",
-					"kind" : "storage",
-					"scope" : "public",
-					"type" : "string"
-				},
-				{
-					"name" : "Elevi",
-					"kind" : "storage",
-					"scope" : "public",
-					"type" : "string"
-				}
-			],
-			"key" : 
-			[
-				{
-					"name" : "ID"
-				}
-			]
-		},
-		{
-			"name" : "Materii",
-			"className" : "Materii",
-			"collectionName" : "MateriiCollection",
-			"scope" : "public",
-			"publishAsJSGlobal" : true,
-			"attributes" : 
-			[
-				{
-					"name" : "ID",
-					"kind" : "storage",
-					"scope" : "public",
-					"indexed" : true,
-					"unique" : true,
-					"autosequence" : true,
-					"type" : "long",
-					"indexKind" : "btree"
-				},
-				{
-					"name" : "DenumireMaterie",
-					"kind" : "storage",
-					"scope" : "public",
-					"type" : "string"
-				}
-			],
-			"key" : 
-			[
-				{
-					"name" : "ID"
+					"name": "Imagine",
+					"kind": "storage",
+					"scope": "public",
+					"type": "image"
 				}
 			]
 		}
