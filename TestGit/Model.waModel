@@ -27,8 +27,14 @@
 			},
 			"Note": {
 				"panel": {
-					"pathVisible": true
-				}
+					"pathVisible": true,
+					"isOpen": "true",
+					"position": {
+						"X": 285,
+						"Y": 270
+					}
+				},
+				"panelColor": "#B7DDE8"
 			},
 			"Comunicari": {
 				"panelColor": "#D7E3BC",
@@ -61,7 +67,6 @@
 	},
 	"dataClasses": [
 		{
-<<<<<<< HEAD
 			"name": "Clasa",
 			"className": "Clasa",
 			"collectionName": "ClasaCollection",
@@ -218,36 +223,11 @@
 					"unique": true,
 					"not_null": true,
 					"type": "number"
-=======
-			"name" : "Scoala",
-			"className" : "Scoala",
-			"collectionName" : "ScoalaCollection",
-			"scope" : "public",
-			"publishAsJSGlobal" : true,
-			"attributes" : 
-			[
-				{
-					"name" : "ID",
-					"kind" : "storage",
-					"scope" : "public",
-					"unique" : true,
-					"autosequence" : true,
-					"type" : "long",
-					"indexKind" : "btree"
 				},
 				{
-					"name" : "Denumire",
-					"kind" : "storage",
-					"scope" : "public",
-					"unique" : true,
-					"type" : "string",
-					"indexKind" : "btree"
->>>>>>> 298de55c5b2d7075d393dba30f90efe00f8839a7
-				}
-			],
-			"key": [
-				{
-					"name": "ID"
+					"name": "Scoala",
+					"kind": "storage",
+					"scope": "public"
 				}
 			]
 		}

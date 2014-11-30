@@ -3,12 +3,12 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}queryForm1 {
-	 z-index: 11;
-	 width: 471px;
-	 height: 368px;
-	 top: 66px;
-	 left: 20px;
+#{id}dataGrid2 {
+	 z-index: 12;
+	 width: 446px;
+	 height: 312px;
+	 top: 83px;
+	 left: 40px;
 	
 	 position: absolute;
 	 
@@ -236,10 +236,10 @@
 
 #{id}container4 {
 	 z-index: 6;
-	 width: 751px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
+	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -269,10 +269,10 @@
 
 #{id}container3 {
 	 z-index: 5;
-	 width: 751px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
+	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -302,10 +302,10 @@
 
 #{id}container2 {
 	 z-index: 4;
-	 width: 751px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
+	 right: 5px;
 	
 	 position: absolute;
 	 
